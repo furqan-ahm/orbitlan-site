@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OrbitVPN for Android | Download and setup</title>
+<meta name="description" content="Download OrbitVPN for Android, follow the setup steps, or contact Furqan for an account.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#090e43">
+<link rel="canonical" href="https://orbitlan.site/orbitvpn/">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="../assets/orbitlan-icon-48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../guides/guide.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OrbitVPN">
+<meta property="og:title" content="OrbitVPN for Android">
+<meta property="og:description" content="Download the Android app and contact Furqan for access.">
+<meta property="og:url" content="https://orbitlan.site/orbitvpn/">
+<meta property="og:image" content="https://orbitlan.site/assets/orbitlan-social.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://orbitlan.site/assets/orbitlan-social.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "OrbitVPN",
+  "applicationCategory": "SecurityApplication",
+  "operatingSystem": "Android 8.0 or later (64-bit ARM)",
+  "softwareVersion": "0.1.6-beta",
+  "url": "https://orbitlan.site/orbitvpn/",
+  "downloadUrl": "https://downloads.orbitlan.site/latest/android",
+  "description": "An Android VPN app with automatic location selection and device-bound accounts.",
+  "author": {"@type": "Person", "name": "Furqan Ahmed"}
+}
+</script>
+<style>
+  .vpn-hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(145deg,#080c36 0%,#11164d 58%,#31285f 100%)}
+  .vpn-hero::before{content:"";position:absolute;inset:0;opacity:.42;background-image:radial-gradient(circle at 12% 23%,#fff 0 1px,transparent 1.4px),radial-gradient(circle at 76% 19%,#b7c6ff 0 1px,transparent 1.5px),radial-gradient(circle at 88% 66%,#fff 0 1px,transparent 1.4px),radial-gradient(circle at 42% 82%,#8ea7ff 0 1px,transparent 1.4px);background-size:211px 211px,257px 257px,307px 307px,359px 359px}
+  .vpn-hero-grid{position:relative;min-height:650px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(330px,.92fr);align-items:center;gap:38px;padding:70px 0 58px}
+  .vpn-copy{position:relative;z-index:2}.vpn-copy h1{max-width:650px}.vpn-copy .lede{max-width:590px}
+  .beta-pill{display:inline-flex;align-items:center;gap:9px;margin-bottom:20px;padding:7px 11px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(255,255,255,.08);color:#dfe1ff;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+  .beta-pill::before{content:"";width:8px;height:8px;border-radius:50%;background:#45f5a0;box-shadow:0 0 14px rgba(69,245,160,.8)}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:27px}.hero-actions .button:first-child{color:#17193e;background:#fff}.hero-actions .button.secondary{color:#fff}
+  .build-meta{margin:14px 0 0;color:#bfc3e4;font-size:13px}.build-meta code{color:#eef0ff;overflow-wrap:anywhere}
+  .vpn-planet{position:relative;z-index:0;min-width:0;width:100%;aspect-ratio:1;animation:float 6.8s ease-in-out infinite;will-change:transform}.vpn-planet img,.vpn-network-mesh{position:absolute;inset:50% auto auto 50%;max-width:none;height:auto;transform:translate(-50%,-50%)}.vpn-planet img{z-index:1;width:min(170%,800px);image-rendering:pixelated;filter:drop-shadow(0 34px 40px rgba(0,0,28,.44))}.vpn-network-mesh{width:min(184%,860px);aspect-ratio:1;pointer-events:none}.vpn-network-mesh.back{z-index:0}.vpn-network-mesh.front{z-index:2}
+  @keyframes float{0%,100%{transform:translate3d(0,9px,0)}50%{transform:translate3d(0,-16px,0)}}
+  .beta-body{max-width:860px}.quick-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:0 0 50px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}.quick-fact{padding:24px;background:#fff}.quick-fact strong{display:block;margin-bottom:4px;font-size:17px}.quick-fact span{display:block;color:var(--muted);font-size:14px;line-height:1.5}
+  .download-panel{margin:34px 0;padding:30px;border-radius:14px;color:#fff;background:#171a56}.download-panel h2{margin:0 0 8px;color:#fff}.download-panel p{color:#d1d3ed}.download-panel code{color:#e8e9ff;background:#292d6e}.checksum{display:block;margin-top:14px;font-size:12px;line-height:1.6;overflow-wrap:anywhere}.download-panel .button{margin:5px 8px 0 0}
+  .contact-panel{margin:34px 0;padding:26px 30px;border:1px solid var(--line);border-radius:14px;background:#fff}.contact-panel h2{margin:0 0 8px}.contact-panel p{margin-bottom:16px;color:var(--muted)}.contact-actions{display:flex;flex-wrap:wrap;gap:10px}.contact-actions .button{color:#fff;background:var(--violet)}.contact-actions .button.secondary{color:var(--violet);border-color:var(--violet);background:transparent}
+  .privacy-copy{padding-top:4px;border-top:1px solid var(--line)}
+  @media(max-width:760px){.vpn-hero-grid{min-height:0;grid-template-columns:1fr;padding:55px 0 45px;text-align:center}.vpn-copy{grid-row:2;grid-column:1}.vpn-copy .lede{margin-left:auto;margin-right:auto}.hero-actions,.contact-actions{justify-content:center}.vpn-planet{grid-row:1;grid-column:1;width:min(78vw,390px);margin:0 auto}.quick-facts{grid-template-columns:1fr}.vpn-planet img{width:170%}.vpn-network-mesh{width:184%}}
+  @media(prefers-reduced-motion:reduce){.vpn-planet{animation:none}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main navigation">
+    <a class="brand" href="../"><img src="../assets/earthspin-transparent.webp" width="35" height="35" alt=""><span>rbitLan</span></a>
+    <div class="nav-links"><a href="#access">Get access</a><a href="#privacy">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a class="download" href="https://downloads.orbitlan.site/latest/android">Download Android</a></div>
+  </nav>
+</header>
+<main>
+  <section class="vpn-hero">
+    <div class="wrap vpn-hero-grid">
+      <div class="vpn-copy">
+        <span class="beta-pill">Available for Android</span>
+        <h1>Connect without fiddling with server settings.</h1>
+        <p class="lede">OrbitVPN picks an available location for you, shows your data use, and keeps the connection running when you leave the app.</p>
+        <div class="hero-actions"><a class="button" href="https://downloads.orbitlan.site/latest/android">Download for Android</a><a class="button secondary" href="#access">Get an account</a></div>
+        <p class="build-meta">Android 8.0+ · 64-bit ARM · version 0.1.6-beta · account required</p>
+      </div>
+      <div class="vpn-planet" aria-hidden="true"><canvas class="vpn-network-mesh back" id="vpn-mesh-back"></canvas><img src="../assets/earth-clouds.gif" width="286" height="286" alt=""><canvas class="vpn-network-mesh front" id="vpn-mesh-front"></canvas></div>
+    </div>
+  </section>
+  <article class="article">
+    <div class="wrap article-body beta-body">
+      <section class="quick-facts" aria-label="OrbitVPN facts">
+        <div class="quick-fact"><strong>Android app</strong><span>A signed APK for 64-bit Android phones running Android 8 or newer.</span></div>
+        <div class="quick-fact"><strong>Automatic location</strong><span>The app chooses from the locations currently available to your account.</span></div>
+        <div class="quick-fact"><strong>Account required</strong><span>Message on WhatsApp or email to request access before signing in.</span></div>
+      </section>
+      <section class="download-panel" id="install">
+        <p class="eyebrow">Android download</p><h2>OrbitVPN 0.1.6-beta</h2>
+        <p>The APK is served from the OrbitLan domain through Cloudflare. Android may ask you to allow installs from your browser or file manager because the app is not distributed through Google Play.</p>
+        <a class="button" href="https://downloads.orbitlan.site/OrbitVPN-0.1.6-beta-arm64.apk">Download APK · 76.1 MiB</a><a class="button secondary" href="https://downloads.orbitlan.site/SHA256SUMS.txt">Checksum file</a>
+        <code class="checksum">SHA-256: 88a1cf1642f0f8875b869f4d2828e11bd58659a6d126eeffcc8bd72bc2f419ea</code>
+      </section>
+      <h2>Install and sign in</h2>
+      <ol class="steps"><li>Download the APK on the Android phone you plan to use.</li><li>Open the file and approve installation from that source when Android asks.</li><li>Sign in with the account sent to you. The first successful sign-in links it to that phone.</li><li>Tap Connect and approve Android's VPN prompt. OrbitVPN chooses an available location automatically.</li></ol>
+      <div class="note"><strong>Signing in on a new phone signs out the old one.</strong> If you change phones and cannot sign in, send me a message so I can reset it.</div>
+      <section class="contact-panel" id="access">
+        <h2>Need an account?</h2>
+        <p>Send me a message and I’ll help you get access. You can use WhatsApp for the quickest reply or email if that is easier.</p>
+        <div class="contact-actions"><a class="button" href="https://wa.me/923243122544?text=Hi%2C%20I%27d%20like%20access%20to%20OrbitVPN.">WhatsApp +92 324 3122544</a><a class="button secondary" href="mailto:furqanshaheer@gmail.com?subject=OrbitVPN%20access">Email Furqan</a></div>
+      </section>
+      <h2 id="privacy">What we keep</h2>
+      <div class="privacy-copy">
+        <p>OrbitVPN keeps the information needed to run your account: the phone linked to it, its expiry, total upload and download use, the selected country, and basic connection errors.</p>
+        <p>It does not intentionally record the websites you visit or the contents of your traffic. VPN traffic passes through the selected OrbitVPN server and its hosting provider.</p>
+      </div>
+      <h2>Having trouble?</h2>
+      <p>Message <a href="https://wa.me/923243122544">+92 324 3122544 on WhatsApp</a> or email <a href="mailto:furqanshaheer@gmail.com?subject=OrbitVPN%20help">furqanshaheer@gmail.com</a>. Include your phone model, Android version, city, network or carrier, app version, and the error you saw. Do not send your password.</p>
+    </div>
+  </article>
+</main>
+<footer><div class="wrap footer-row"><span>OrbitVPN by <a href="https://github.com/furqan-ahm" rel="me">Furqan Ahmed</a></span><span><a href="../">OrbitLan</a><a href="#install">Download</a><a href="#privacy">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a href="mailto:furqanshaheer@gmail.com">Email</a></span></div></footer>
+<script>
+(() => {
+  const planet = document.querySelector('.vpn-planet');
+  const back = document.getElementById('vpn-mesh-back');
+  const front = document.getElementById('vpn-mesh-front');
+  if (!planet || !back || !front) return;
+  const backContext = back.getContext('2d', { alpha: true });
+  const frontContext = front.getContext('2d', { alpha: true });
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const latitudes = [-.64, .08, .62, -.22, .38, -.48, .72, .18];
+  const links = [[0,1],[1,2],[2,0],[2,3],[3,0],[3,4],[4,1],[4,5],[5,2],[5,6],[6,3],[6,7],[7,4],[7,0]];
+  let size = 1, ratio = 1, active = true, frameId = 0, last = 0;
+
+  function resize() {
+    size = Math.max(1, Math.round(back.getBoundingClientRect().width));
+    ratio = Math.min(devicePixelRatio || 1, 1.5);
+    for (const canvas of [back, front]) {
+      canvas.width = Math.round(size * ratio);
+      canvas.height = Math.round(size * ratio);
+    }
+    draw(reduceMotion ? 2.4 : performance.now() / 1000);
+  }
+
+  function pointsAt(time) {
+    const points = [];
+    const center = size / 2;
+    for (let index = 0; index < latitudes.length; index++) {
+      const longitude = index * (Math.PI * 2 / latitudes.length) + (index % 2) * .34 + time * (.19 + (index % 3) * .012);
+      const latitude = latitudes[index] + Math.sin(time * .31 + index * .8) * .06;
+      const latitudeWidth = Math.cos(latitude);
+      const depth = Math.cos(longitude) * latitudeWidth;
+      const radius = size * (.414 + (index % 3) * .012);
+      points.push({
+        x: center + Math.sin(longitude) * latitudeWidth * radius,
+        y: center - Math.sin(latitude) * size * .36 + depth * size * .035,
+        depth,
+        radius: Math.max(3.5, size * (.0064 + (depth + 1) * .0018))
+      });
+    }
+    return points;
+  }
+
+  function drawLayer(context, points, isFront, time) {
+    context.setTransform(ratio, 0, 0, ratio, 0, 0);
+    context.clearRect(0, 0, size, size);
+    context.lineCap = 'round';
+    context.setLineDash([Math.max(3, size * .006), Math.max(4, size * .008)]);
+    context.lineDashOffset = -(time * 10);
+    for (const [a, b] of links) {
+      const depth = (points[a].depth + points[b].depth) / 2;
+      if ((depth >= 0) !== isFront) continue;
+      const alpha = isFront ? .46 + Math.max(0, depth) * .32 : .12 + (depth + 1) * .08;
+      context.strokeStyle = `rgba(76,255,159,${alpha})`;
+      context.lineWidth = Math.max(1, size * .0025);
+      context.beginPath();
+      context.moveTo(points[a].x, points[a].y);
+      context.lineTo(points[b].x, points[b].y);
+      context.stroke();
+    }
+    context.setLineDash([]);
+    for (const point of points) {
+      if ((point.depth >= 0) !== isFront) continue;
+      const alpha = isFront ? .82 + Math.max(0, point.depth) * .18 : .28 + (point.depth + 1) * .14;
+      context.shadowColor = `rgba(76,255,159,${isFront ? .65 : .18})`;
+      context.shadowBlur = isFront ? Math.max(5, size * .012) : 2;
+      context.fillStyle = `rgba(76,255,159,${alpha})`;
+      context.strokeStyle = `rgba(7,92,60,${alpha})`;
+      context.lineWidth = Math.max(1, size * .0022);
+      context.beginPath();
+      context.arc(point.x, point.y, point.radius, 0, Math.PI * 2);
+      context.fill();
+      context.stroke();
+    }
+    context.shadowBlur = 0;
+  }
+
+  function draw(time) {
+    const points = pointsAt(time);
+    drawLayer(backContext, points, false, time);
+    drawLayer(frontContext, points, true, time);
+  }
+
+  function frame(now) {
+    if (now - last >= 34) {
+      draw(now / 1000);
+      last = now;
+    }
+    frameId = requestAnimationFrame(frame);
+  }
+
+  function updateAnimation() {
+    const shouldRun = active && !document.hidden && !reduceMotion;
+    if (shouldRun && !frameId) {
+      last = performance.now();
+      frameId = requestAnimationFrame(frame);
+    } else if (!shouldRun && frameId) {
+      cancelAnimationFrame(frameId);
+      frameId = 0;
+    }
+  }
+
+  document.addEventListener('visibilitychange', updateAnimation);
+  if ('ResizeObserver' in window) new ResizeObserver(resize).observe(back);
+  else addEventListener('resize', resize, { passive: true });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => {
+      active = entry.isIntersecting;
+      updateAnimation();
+    }, { threshold: 0 }).observe(planet);
+  }
+  resize();
+  updateAnimation();
+})();
+</script>
+</body>
+</html>
