@@ -35,45 +35,48 @@
 }
 </script>
 <style>
-  .vpn-hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(145deg,#080c36 0%,#11164d 58%,#31285f 100%)}
-  .vpn-hero::before{content:"";position:absolute;inset:0;opacity:.42;background-image:radial-gradient(circle at 12% 23%,#fff 0 1px,transparent 1.4px),radial-gradient(circle at 76% 19%,#b7c6ff 0 1px,transparent 1.5px),radial-gradient(circle at 88% 66%,#fff 0 1px,transparent 1.4px),radial-gradient(circle at 42% 82%,#8ea7ff 0 1px,transparent 1.4px);background-size:211px 211px,257px 257px,307px 307px,359px 359px}
-  .vpn-hero-grid{position:relative;min-height:650px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(330px,.92fr);align-items:center;gap:38px;padding:70px 0 58px}
-  .vpn-copy{position:relative;z-index:2}.vpn-copy h1{max-width:650px}.vpn-copy .lede{max-width:590px}
-  .beta-pill{display:inline-flex;align-items:center;gap:9px;margin-bottom:20px;padding:7px 11px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(255,255,255,.08);color:#dfe1ff;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
-  .beta-pill::before{content:"";width:8px;height:8px;border-radius:50%;background:#45f5a0;box-shadow:0 0 14px rgba(69,245,160,.8)}
-  .hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:27px}.hero-actions .button:first-child{color:#17193e;background:#fff}.hero-actions .button.secondary{color:#fff}
-  .build-meta{margin:14px 0 0;color:#bfc3e4;font-size:13px}.build-meta code{color:#eef0ff;overflow-wrap:anywhere}
-  .vpn-planet{position:relative;z-index:0;min-width:0;width:100%;aspect-ratio:1;animation:float 6.8s ease-in-out infinite;will-change:transform}.vpn-planet img,.vpn-network-mesh{position:absolute;inset:50% auto auto 50%;max-width:none;height:auto;transform:translate(-50%,-50%)}.vpn-planet img{z-index:1;width:min(170%,800px);image-rendering:pixelated;filter:drop-shadow(0 34px 40px rgba(0,0,28,.44))}.vpn-network-mesh{width:min(184%,860px);aspect-ratio:1;pointer-events:none}.vpn-network-mesh.back{z-index:0}.vpn-network-mesh.front{z-index:2}
+  body{overflow-x:hidden}body>.site-header~main .wrap,.site-header .wrap,footer .wrap{width:min(1120px,calc(100% - 48px))}
+  .site-header{position:absolute;inset:0 0 auto;z-index:10;background:transparent}.site-header .nav{height:78px;min-height:0}.site-header .brand{display:flex;flex-direction:column;gap:1px;color:#fff;line-height:1}.brand-name{display:flex;align-items:center;font-family:"Segoe UI Variable Display","Segoe UI",Inter,ui-sans-serif,sans-serif;font-size:25px;font-weight:800;letter-spacing:-1px}.brand-orbit{display:block;width:38px;height:38px;margin-right:-2px;object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 3px 7px rgba(0,0,24,.45))}.brand-tag{margin-left:36px;color:#bfc3e8;font-size:10px;font-weight:650;letter-spacing:.09em;text-transform:uppercase}.site-header .nav-links{gap:26px}.site-header .nav-links a{font-size:14px}.site-header .nav-links .download{padding:9px 16px}
+  .vpn-hero{position:relative;isolation:isolate;min-height:680px;display:flex;align-items:center;overflow:hidden;color:#fff;background:linear-gradient(180deg,#090e43 0%,#111755 52%,#24245f 78%,#40316b 100%)}
+  .vpn-sky{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+  .vpn-hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);align-items:center;gap:54px;padding-top:42px}.vpn-hero-grid>*{min-width:0}
+  .vpn-copy{position:relative;z-index:3}.vpn-copy h1{max-width:660px;margin:0;font-size:clamp(50px,5.7vw,78px);line-height:.99;letter-spacing:-.058em;text-shadow:0 2px 12px rgba(4,7,39,.95)}.vpn-copy .lede{max-width:590px;margin:24px 0 28px;color:#d8daf5;font-size:clamp(18px,2vw,21px);line-height:1.55;text-shadow:0 2px 12px rgba(4,7,39,.95)}
+  .vpn-eyebrow{margin:0 0 21px;color:#c9c7ff;font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:11px;font-weight:700;line-height:1.6;letter-spacing:.09em;text-transform:uppercase;text-shadow:0 2px 12px rgba(4,7,39,.95)}
+  .hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:13px}.hero-actions .button{min-height:50px;padding:0 22px}.hero-actions .button:first-child{color:#17193e;background:#fff}.hero-actions .button.secondary{color:#fff}
+  .build-meta{display:flex;flex-wrap:wrap;gap:7px 18px;margin:17px 0 0;color:#c8cae9;font-size:13px;text-shadow:0 2px 12px rgba(4,7,39,.95)}.build-meta a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+  .vpn-planet{position:relative;z-index:0;min-width:0;width:100%;aspect-ratio:1;animation:float 6.8s ease-in-out infinite;will-change:transform}.vpn-planet img,.vpn-network-mesh{position:absolute;inset:50% auto auto 50%;max-width:none;height:auto;transform:translate(-50%,-50%)}.vpn-planet img{z-index:1;display:block;width:min(170%,800px);image-rendering:pixelated;filter:drop-shadow(0 30px 45px rgba(0,0,30,.35))}.vpn-network-mesh{width:min(184%,860px);aspect-ratio:1;pointer-events:none}.vpn-network-mesh.back{z-index:0}.vpn-network-mesh.front{z-index:2}
   @keyframes float{0%,100%{transform:translate3d(0,9px,0)}50%{transform:translate3d(0,-16px,0)}}
-  .beta-body{max-width:860px}.quick-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:0 0 50px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}.quick-fact{padding:24px;background:#fff}.quick-fact strong{display:block;margin-bottom:4px;font-size:17px}.quick-fact span{display:block;color:var(--muted);font-size:14px;line-height:1.5}
+  .vpn-article{padding-top:42px}.beta-body{max-width:860px}.quick-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:0 0 46px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}.quick-fact{padding:24px;background:#fff}.quick-fact strong{display:block;margin-bottom:4px;font-size:17px}.quick-fact span{display:block;color:var(--muted);font-size:14px;line-height:1.5}
   .download-panel{margin:34px 0;padding:30px;border-radius:14px;color:#fff;background:#171a56}.download-panel h2{margin:0 0 8px;color:#fff}.download-panel p{color:#d1d3ed}.download-panel code{color:#e8e9ff;background:#292d6e}.checksum{display:block;margin-top:14px;font-size:12px;line-height:1.6;overflow-wrap:anywhere}.download-panel .button{margin:5px 8px 0 0}
   .contact-panel{margin:34px 0;padding:26px 30px;border:1px solid var(--line);border-radius:14px;background:#fff}.contact-panel h2{margin:0 0 8px}.contact-panel p{margin-bottom:16px;color:var(--muted)}.contact-actions{display:flex;flex-wrap:wrap;gap:10px}.contact-actions .button{color:#fff;background:var(--violet)}.contact-actions .button.secondary{color:var(--violet);border-color:var(--violet);background:transparent}
   .privacy-copy{padding-top:4px;border-top:1px solid var(--line)}
-  @media(max-width:760px){.vpn-hero-grid{min-height:0;grid-template-columns:1fr;padding:55px 0 45px;text-align:center}.vpn-copy{grid-row:2;grid-column:1}.vpn-copy .lede{margin-left:auto;margin-right:auto}.hero-actions,.contact-actions{justify-content:center}.vpn-planet{grid-row:1;grid-column:1;width:min(78vw,390px);margin:0 auto}.quick-facts{grid-template-columns:1fr}.vpn-planet img{width:170%}.vpn-network-mesh{width:184%}}
+  @media(max-width:900px){body>.site-header~main .wrap,.site-header .wrap,footer .wrap{width:min(1120px,calc(100% - 32px))}.site-header .nav{height:68px}.brand-name{font-size:22px}.brand-orbit{width:34px;height:34px;margin-right:-1px}.brand-tag{margin-left:32px;font-size:9px}.site-header .nav-links a:not(.download){display:none}.vpn-hero{min-height:0;padding:96px 0 58px}.vpn-hero-grid{grid-template-columns:minmax(0,1fr);gap:18px;padding:0;text-align:center}.vpn-copy{grid-row:2;grid-column:1}.vpn-copy h1{font-size:clamp(42px,12vw,64px)}.vpn-copy .lede{margin-left:auto;margin-right:auto}.hero-actions,.contact-actions,.build-meta{justify-content:center}.vpn-planet{grid-row:1;grid-column:1;width:clamp(280px,74vw,460px);margin:0 auto}.quick-facts{grid-template-columns:1fr}.vpn-planet img{width:min(170%,780px)}.vpn-network-mesh{width:min(184%,680px)}}
+  @media(max-width:420px){body>.site-header~main .wrap,.site-header .wrap,footer .wrap{width:calc(100% - 24px)}.site-header .nav{gap:10px}.site-header .brand{min-width:0}.brand-name{font-size:20px}.brand-orbit{width:30px;height:30px}.brand-tag{margin-left:28px;font-size:8px;letter-spacing:.07em;white-space:nowrap}.site-header .nav-links{flex:0 0 auto}.site-header .nav-links .download{padding:8px 11px}.vpn-hero{padding:82px 0 48px}.vpn-planet{width:min(74vw,280px)}.vpn-hero-grid{gap:14px}.vpn-eyebrow{margin-bottom:16px;font-size:9px}.vpn-copy h1{font-size:clamp(36px,11.5vw,44px)}.vpn-copy .lede{margin:20px auto 24px;font-size:17px;overflow-wrap:anywhere}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .button{width:100%;padding:0 17px}.build-meta{display:block}.build-meta a{display:block;margin-top:5px}.vpn-article{padding-top:36px}}
   @media(prefers-reduced-motion:reduce){.vpn-planet{animation:none}}
 </style>
 </head>
 <body>
 <header class="site-header">
   <nav class="wrap nav" aria-label="Main navigation">
-    <a class="brand" href="../"><img src="../assets/earthspin-transparent.webp" width="35" height="35" alt=""><span>rbitLan</span></a>
-    <div class="nav-links"><a href="#access">Get access</a><a href="#privacy">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a class="download" href="#install">Downloads</a></div>
+    <a class="brand" href="../"><span class="brand-name"><img class="brand-orbit" src="../assets/earthspin-transparent.webp" width="32" height="32" alt=""><span>rbitLan</span></span><span class="brand-tag">Virtual LAN for games</span></a>
+    <div class="nav-links"><a href="../">OrbitLan</a><a href="#privacy">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a class="download" href="#install">Downloads</a></div>
   </nav>
 </header>
 <main>
   <section class="vpn-hero">
+    <canvas class="vpn-sky" id="vpn-sky" aria-hidden="true"></canvas>
     <div class="wrap vpn-hero-grid">
       <div class="vpn-copy">
-        <span class="beta-pill">Available for Windows and Android</span>
+        <p class="vpn-eyebrow">Private VPN · Windows + Android</p>
         <h1>Connect without fiddling with server settings.</h1>
         <p class="lede">OrbitVPN picks an available location for you, shows your data use, and keeps the connection running in the background.</p>
-        <div class="hero-actions"><a class="button" href="https://downloads.orbitlan.site/latest/android">Android</a><a class="button secondary" href="https://downloads.orbitlan.site/latest/windows">Windows</a><a class="button secondary" href="#access">Get an account</a></div>
-        <p class="build-meta">Android 8.0+ or Windows 10/11 · 64-bit · account required</p>
+        <div class="hero-actions"><a class="button" href="https://downloads.orbitlan.site/latest/android">Download for Android</a><a class="button secondary" href="https://downloads.orbitlan.site/latest/windows">Download for Windows</a></div>
+        <p class="build-meta"><span>Android 8.0+ · Windows 10/11 · 64-bit</span><a href="#access">Need an account? Contact me</a></p>
       </div>
       <div class="vpn-planet" aria-hidden="true"><canvas class="vpn-network-mesh back" id="vpn-mesh-back"></canvas><img src="../assets/earth-clouds.gif" width="286" height="286" alt=""><canvas class="vpn-network-mesh front" id="vpn-mesh-front"></canvas></div>
     </div>
   </section>
-  <article class="article">
+  <article class="article vpn-article">
     <div class="wrap article-body beta-body">
       <section class="quick-facts" aria-label="OrbitVPN facts">
         <div class="quick-fact"><strong>Windows and Android</strong><span>A signed Android APK and a portable Windows 10/11 beta for 64-bit devices.</span></div>
@@ -114,6 +117,81 @@
 </main>
 <footer><div class="wrap footer-row"><span>OrbitVPN · built and supported by me</span><span><a href="../">OrbitLan</a><a href="#install">Download</a><a href="#privacy">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a href="mailto:furqanshaheer@gmail.com">Email</a></span></div></footer>
 <script>
+(() => {
+  const canvas = document.getElementById('vpn-sky');
+  const hero = canvas?.closest('.vpn-hero');
+  if (!canvas || !hero) return;
+  const context = canvas.getContext('2d', { alpha: true });
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let width = 0, height = 0, stars = [], last = 0, frameId = 0;
+
+  function makeStars() {
+    const count = Math.min(90, Math.max(42, Math.floor(width * height / 18000)));
+    stars = Array.from({ length: count }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height * .84,
+      size: Math.random() < .15 ? 2 : 1,
+      speed: .6 + Math.random() * 1.8,
+      alpha: .35 + Math.random() * .55,
+      phase: Math.random() * Math.PI * 2
+    }));
+  }
+
+  function resize() {
+    width = Math.max(1, Math.round(hero.clientWidth));
+    height = Math.max(1, Math.round(hero.clientHeight));
+    canvas.width = width;
+    canvas.height = height;
+    makeStars();
+    draw(0, 0);
+  }
+
+  function draw(delta, now) {
+    context.clearRect(0, 0, width, height);
+    for (const star of stars) {
+      if (!reduceMotion) {
+        star.x -= star.speed * delta;
+        if (star.x < -3) star.x = width + 3;
+      }
+      const twinkle = reduceMotion ? 1 : .76 + Math.sin(now * .0012 + star.phase) * .24;
+      context.globalAlpha = star.alpha * twinkle;
+      context.fillStyle = star.size === 2 ? '#ffd2dc' : '#eef0ff';
+      context.fillRect(Math.round(star.x), Math.round(star.y), star.size, star.size);
+      if (star.size === 2) {
+        context.fillRect(Math.round(star.x) - 2, Math.round(star.y) + 1, 6, 1);
+        context.fillRect(Math.round(star.x) + 1, Math.round(star.y) - 2, 1, 6);
+      }
+    }
+    context.globalAlpha = 1;
+  }
+
+  function frame(now) {
+    if (now - last >= 42) {
+      draw(Math.min((now - last) / 1000, .08), now);
+      last = now;
+    }
+    frameId = requestAnimationFrame(frame);
+  }
+
+  function setActive(active) {
+    if (active && !reduceMotion && !frameId) {
+      last = performance.now();
+      frameId = requestAnimationFrame(frame);
+    } else if (!active && frameId) {
+      cancelAnimationFrame(frameId);
+      frameId = 0;
+    }
+  }
+
+  addEventListener('resize', resize, { passive: true });
+  resize();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => setActive(entry.isIntersecting), { threshold: 0 }).observe(hero);
+  } else {
+    setActive(true);
+  }
+})();
+
 (() => {
   const planet = document.querySelector('.vpn-planet');
   const back = document.getElementById('vpn-mesh-back');
