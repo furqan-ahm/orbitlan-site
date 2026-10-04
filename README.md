@@ -28,7 +28,7 @@ npm run deploy
 
 `wrangler.jsonc` deploys the existing `orbitlan-web` Worker with Workers Static
 Assets and retains the `orbitlan.site` and `www.orbitlan.site` custom domains.
-Deployment requires access to Furqan's Cloudflare account.
+Deployment requires access to the project owner's Cloudflare account.
 
 The Android APK is hosted independently at
 [`downloads.orbitlan.site`](https://downloads.orbitlan.site). Keep displayed

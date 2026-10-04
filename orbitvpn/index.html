@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OrbitVPN for Android | Download and setup</title>
-<meta name="description" content="Download OrbitVPN for Android, follow the setup steps, or contact Furqan for an account.">
+<title>OrbitVPN for Windows and Android | Download and setup</title>
+<meta name="description" content="Download OrbitVPN for Windows or Android, follow the setup steps, or contact me for an account.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#090e43">
 <link rel="canonical" href="https://orbitlan.site/orbitvpn/">
@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="../guides/guide.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="OrbitVPN">
-<meta property="og:title" content="OrbitVPN for Android">
-<meta property="og:description" content="Download the Android app and contact Furqan for access.">
+<meta property="og:title" content="OrbitVPN for Windows and Android">
+<meta property="og:description" content="Download the Windows or Android app and contact me for access.">
 <meta property="og:url" content="https://orbitlan.site/orbitvpn/">
 <meta property="og:image" content="https://orbitlan.site/assets/orbitlan-social.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -26,11 +26,11 @@
   "@type": "SoftwareApplication",
   "name": "OrbitVPN",
   "applicationCategory": "SecurityApplication",
-  "operatingSystem": "Android 8.0 or later (64-bit ARM)",
-  "softwareVersion": "0.1.6-beta",
+  "operatingSystem": ["Android 8.0 or later (64-bit ARM)", "Windows 10 or 11 (x64)"],
+  "softwareVersion": "Android 0.1.6-beta; Windows 0.1.0-beta",
   "url": "https://orbitlan.site/orbitvpn/",
-  "downloadUrl": "https://downloads.orbitlan.site/latest/android",
-  "description": "An Android VPN app with automatic location selection and device-bound accounts.",
+  "downloadUrl": ["https://downloads.orbitlan.site/latest/android", "https://downloads.orbitlan.site/latest/windows"],
+  "description": "A Windows and Android VPN app with automatic location selection and device-bound accounts.",
   "author": {"@type": "Person", "name": "Furqan Ahmed"}
 }
 </script>
@@ -57,18 +57,18 @@
 <header class="site-header">
   <nav class="wrap nav" aria-label="Main navigation">
     <a class="brand" href="../"><img src="../assets/earthspin-transparent.webp" width="35" height="35" alt=""><span>rbitLan</span></a>
-    <div class="nav-links"><a href="#access">Get access</a><a href="#privacy">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a class="download" href="https://downloads.orbitlan.site/latest/android">Download Android</a></div>
+    <div class="nav-links"><a href="#access">Get access</a><a href="#privacy">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a class="download" href="#install">Downloads</a></div>
   </nav>
 </header>
 <main>
   <section class="vpn-hero">
     <div class="wrap vpn-hero-grid">
       <div class="vpn-copy">
-        <span class="beta-pill">Available for Android</span>
+        <span class="beta-pill">Available for Windows and Android</span>
         <h1>Connect without fiddling with server settings.</h1>
-        <p class="lede">OrbitVPN picks an available location for you, shows your data use, and keeps the connection running when you leave the app.</p>
-        <div class="hero-actions"><a class="button" href="https://downloads.orbitlan.site/latest/android">Download for Android</a><a class="button secondary" href="#access">Get an account</a></div>
-        <p class="build-meta">Android 8.0+ · 64-bit ARM · version 0.1.6-beta · account required</p>
+        <p class="lede">OrbitVPN picks an available location for you, shows your data use, and keeps the connection running in the background.</p>
+        <div class="hero-actions"><a class="button" href="https://downloads.orbitlan.site/latest/android">Android</a><a class="button secondary" href="https://downloads.orbitlan.site/latest/windows">Windows</a><a class="button secondary" href="#access">Get an account</a></div>
+        <p class="build-meta">Android 8.0+ or Windows 10/11 · 64-bit · account required</p>
       </div>
       <div class="vpn-planet" aria-hidden="true"><canvas class="vpn-network-mesh back" id="vpn-mesh-back"></canvas><img src="../assets/earth-clouds.gif" width="286" height="286" alt=""><canvas class="vpn-network-mesh front" id="vpn-mesh-front"></canvas></div>
     </div>
@@ -76,7 +76,7 @@
   <article class="article">
     <div class="wrap article-body beta-body">
       <section class="quick-facts" aria-label="OrbitVPN facts">
-        <div class="quick-fact"><strong>Android app</strong><span>A signed APK for 64-bit Android phones running Android 8 or newer.</span></div>
+        <div class="quick-fact"><strong>Windows and Android</strong><span>A signed Android APK and a portable Windows 10/11 beta for 64-bit devices.</span></div>
         <div class="quick-fact"><strong>Automatic location</strong><span>The app chooses from the locations currently available to your account.</span></div>
         <div class="quick-fact"><strong>Account required</strong><span>Message on WhatsApp or email to request access before signing in.</span></div>
       </section>
@@ -84,27 +84,35 @@
         <p class="eyebrow">Android download</p><h2>OrbitVPN 0.1.6-beta</h2>
         <p>The APK is served from the OrbitLan domain through Cloudflare. Android may ask you to allow installs from your browser or file manager because the app is not distributed through Google Play.</p>
         <a class="button" href="https://downloads.orbitlan.site/OrbitVPN-0.1.6-beta-arm64.apk">Download APK · 76.1 MiB</a><a class="button secondary" href="https://downloads.orbitlan.site/SHA256SUMS.txt">Checksum file</a>
-        <code class="checksum">SHA-256: 88a1cf1642f0f8875b869f4d2828e11bd58659a6d126eeffcc8bd72bc2f419ea</code>
+        <code class="checksum">SHA-256: f36232c91c9e30c03fd636b9fdbb56dc369142738bca5b5f6ff6ee53fe10315c</code>
       </section>
-      <h2>Install and sign in</h2>
+      <section class="download-panel" id="windows">
+        <p class="eyebrow">Windows download</p><h2>OrbitVPN 0.1.0-beta</h2>
+        <p>The Windows build is a portable ZIP for 64-bit Windows 10 and 11. Extract it before opening OrbitVPN.exe. It currently shows an Unknown Publisher warning because I have not purchased an Authenticode certificate yet.</p>
+        <a class="button" href="https://downloads.orbitlan.site/OrbitVPN-Windows-0.1.0-beta-x64.zip">Download Windows ZIP · 80.0 MiB</a><a class="button secondary" href="https://downloads.orbitlan.site/SHA256SUMS.txt">Checksum file</a>
+        <code class="checksum">SHA-256: ac8a044bb9690838cdf30e28169ca9f3279c1b594c3082392d53a645403e5182</code>
+      </section>
+      <h2>Android setup</h2>
       <ol class="steps"><li>Download the APK on the Android phone you plan to use.</li><li>Open the file and approve installation from that source when Android asks.</li><li>Sign in with the account sent to you. The first successful sign-in links it to that phone.</li><li>Tap Connect and approve Android's VPN prompt. OrbitVPN chooses an available location automatically.</li></ol>
-      <div class="note"><strong>Signing in on a new phone signs out the old one.</strong> If you change phones and cannot sign in, send me a message so I can reset it.</div>
+      <h2>Windows setup</h2>
+      <ol class="steps"><li>Download and extract the Windows ZIP.</li><li>Open OrbitVPN.exe and approve the administrator prompt needed for its VPN adapter.</li><li>Sign in, leave Locations on Auto, and press Connect.</li><li>Minimize it to the notification area while using the VPN. Closing OrbitVPN disconnects it.</li></ol>
+      <div class="note"><strong>Signing in on another device signs out the old one on a one-device account.</strong> If you change devices and cannot sign in, send me a message so I can reset it.</div>
       <section class="contact-panel" id="access">
         <h2>Need an account?</h2>
         <p>Send me a message and I’ll help you get access. You can use WhatsApp for the quickest reply or email if that is easier.</p>
-        <div class="contact-actions"><a class="button" href="https://wa.me/923243122544?text=Hi%2C%20I%27d%20like%20access%20to%20OrbitVPN.">WhatsApp +92 324 3122544</a><a class="button secondary" href="mailto:furqanshaheer@gmail.com?subject=OrbitVPN%20access">Email Furqan</a></div>
+        <div class="contact-actions"><a class="button" href="https://wa.me/923243122544?text=Hi%2C%20I%27d%20like%20access%20to%20OrbitVPN.">WhatsApp +92 324 3122544</a><a class="button secondary" href="mailto:furqanshaheer@gmail.com?subject=OrbitVPN%20access">Email me</a></div>
       </section>
       <h2 id="privacy">What we keep</h2>
       <div class="privacy-copy">
-        <p>OrbitVPN keeps the information needed to run your account: the phone linked to it, its expiry, total upload and download use, the selected country, and basic connection errors.</p>
+        <p>OrbitVPN keeps the information needed to run your account: the device linked to it, its expiry, total upload and download use, the selected country, and basic connection errors.</p>
         <p>It does not intentionally record the websites you visit or the contents of your traffic. VPN traffic passes through the selected OrbitVPN server and its hosting provider.</p>
       </div>
       <h2>Having trouble?</h2>
-      <p>Message <a href="https://wa.me/923243122544">+92 324 3122544 on WhatsApp</a> or email <a href="mailto:furqanshaheer@gmail.com?subject=OrbitVPN%20help">furqanshaheer@gmail.com</a>. Include your phone model, Android version, city, network or carrier, app version, and the error you saw. Do not send your password.</p>
+      <p>Message <a href="https://wa.me/923243122544">+92 324 3122544 on WhatsApp</a> or email <a href="mailto:furqanshaheer@gmail.com?subject=OrbitVPN%20help">furqanshaheer@gmail.com</a>. Include your device model, operating-system version, city, network or carrier, app version, and the error you saw. Do not send your password.</p>
     </div>
   </article>
 </main>
-<footer><div class="wrap footer-row"><span>OrbitVPN by <a href="https://github.com/furqan-ahm" rel="me">Furqan Ahmed</a></span><span><a href="../">OrbitLan</a><a href="#install">Download</a><a href="#privacy">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a href="mailto:furqanshaheer@gmail.com">Email</a></span></div></footer>
+<footer><div class="wrap footer-row"><span>OrbitVPN · built and supported by me</span><span><a href="../">OrbitLan</a><a href="#install">Download</a><a href="#privacy">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a href="mailto:furqanshaheer@gmail.com">Email</a></span></div></footer>
 <script>
 (() => {
   const planet = document.querySelector('.vpn-planet');
