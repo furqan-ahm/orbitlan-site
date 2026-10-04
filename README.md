@@ -30,7 +30,7 @@ npm run deploy
 Assets and retains the `orbitlan.site` and `www.orbitlan.site` custom domains.
 Deployment requires access to the project owner's Cloudflare account.
 
-The Android APK is hosted independently at
+The OrbitVPN Android APK and Windows ZIP are hosted independently at
 [`downloads.orbitlan.site`](https://downloads.orbitlan.site). Keep displayed
 version information and versioned download links aligned with the accepted
 release.
