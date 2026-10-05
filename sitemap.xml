@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://orbitlan.site/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-05</lastmod>
   </url>
   <url>
     <loc>https://orbitlan.site/download/</loc>
@@ -22,7 +22,27 @@
   </url>
   <url>
     <loc>https://orbitlan.site/orbitvpn/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://orbitlan.site/orbitvpn/privacy/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://orbitlan.site/orbitvpn/guides/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://orbitlan.site/orbitvpn/guides/best-vpn-for-china/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://orbitlan.site/orbitvpn/guides/vpn-that-works-in-china/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://orbitlan.site/orbitvpn/guides/china-vpn-windows-android/</loc>
+    <lastmod>2026-10-05</lastmod>
   </url>
   <url>
     <loc>https://orbitlan.site/guides/play-lan-games-online/</loc>

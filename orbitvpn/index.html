@@ -3,23 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OrbitVPN for Windows and Android | Download and setup</title>
-<meta name="description" content="Download OrbitVPN for Windows or Android, follow the setup steps, or contact me for an account.">
+<title>OrbitVPN for China | Windows and Android VPN Beta</title>
+<meta name="description" content="OrbitVPN is a small VPN beta for people who need Windows and Android access in China, with automatic location selection and direct support.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#090e43">
 <link rel="canonical" href="https://orbitlan.site/orbitvpn/">
-<link rel="icon" href="../favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="48x48" href="../assets/orbitlan-icon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/orbitlan-icon-192.png">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="stylesheet" href="../guides/guide.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="OrbitVPN">
-<meta property="og:title" content="OrbitVPN for Windows and Android">
-<meta property="og:description" content="Download the Windows or Android app and contact me for access.">
+<meta property="og:title" content="OrbitVPN for China on Windows and Android">
+<meta property="og:description" content="A small Windows and Android VPN beta with automatic location selection and direct support.">
 <meta property="og:url" content="https://orbitlan.site/orbitvpn/">
-<meta property="og:image" content="https://orbitlan.site/assets/orbitlan-social.png">
+<meta property="og:image" content="https://orbitlan.site/assets/orbitvpn-social.png">
+<meta property="og:image:secure_url" content="https://orbitlan.site/assets/orbitvpn-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OrbitVPN for China on Windows and Android">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://orbitlan.site/assets/orbitlan-social.png">
+<meta name="twitter:title" content="OrbitVPN for China on Windows and Android">
+<meta name="twitter:description" content="A small Windows and Android VPN beta with automatic location selection and direct support.">
+<meta name="twitter:image" content="https://orbitlan.site/assets/orbitvpn-social.png">
+<meta name="twitter:image:alt" content="OrbitVPN for China on Windows and Android">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,6 +38,7 @@
   "operatingSystem": ["Android 8.0 or later (64-bit ARM)", "Windows 10 or 11 (x64)"],
   "softwareVersion": "Android 0.1.6-beta; Windows 0.1.0-beta",
   "url": "https://orbitlan.site/orbitvpn/",
+  "image": "https://orbitlan.site/assets/orbitvpn-social.png",
   "downloadUrl": ["https://downloads.orbitlan.site/latest/android", "https://downloads.orbitlan.site/latest/windows"],
   "description": "A Windows and Android VPN app with automatic location selection and device-bound accounts.",
   "author": {"@type": "Person", "name": "Furqan Ahmed"}
@@ -59,7 +69,7 @@
 <header class="site-header">
   <nav class="wrap nav" aria-label="Main navigation">
     <a class="brand" href="../orbitvpn/"><span class="brand-name"><img class="brand-orbit" src="../assets/earthspin-transparent.webp" width="32" height="32" alt=""><span>rbitVPN</span></span><span class="brand-tag">For Android / Windows</span></a>
-    <div class="nav-links"><a href="../">OrbitLan</a><a href="#privacy">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a class="download" href="#install">Downloads</a></div>
+    <div class="nav-links"><a href="../">OrbitLan</a><a href="guides/">China VPN guides</a><a href="https://wa.me/923243122544">WhatsApp</a><a class="download" href="#install">Downloads</a></div>
   </nav>
 </header>
 <main>
@@ -67,9 +77,9 @@
     <canvas class="vpn-sky" id="vpn-sky" aria-hidden="true"></canvas>
     <div class="wrap vpn-hero-grid">
       <div class="vpn-copy">
-        <p class="vpn-eyebrow">Private VPN · Windows + Android</p>
-        <h1>Connect without fiddling with server settings.</h1>
-        <p class="lede">OrbitVPN picks an available location for you, shows your data use, and keeps the connection running in the background.</p>
+        <p class="vpn-eyebrow">China-focused VPN · Windows + Android</p>
+        <h1>A simpler VPN for China on the devices you use.</h1>
+        <p class="lede">OrbitVPN picks an available location, shows your data use, and keeps the connection running in the background. It is a small beta, so there are no promises that it will work on every network.</p>
         <div class="hero-actions"><a class="button" href="https://downloads.orbitlan.site/latest/android">Download for Android</a><a class="button secondary" href="https://downloads.orbitlan.site/latest/windows">Download for Windows</a></div>
         <p class="build-meta"><span>Android 8.0+ · Windows 10/11 · 64-bit</span><a href="#access">Need an account? Contact me</a></p>
       </div>
@@ -107,15 +117,21 @@
       </section>
       <h2 id="privacy">What we keep</h2>
       <div class="privacy-copy">
-        <p>OrbitVPN keeps the information needed to run your account: the device linked to it, its expiry, total upload and download use, the selected country, and basic connection errors.</p>
-        <p>It does not intentionally record the websites you visit or the contents of your traffic. VPN traffic passes through the selected OrbitVPN server and its hosting provider.</p>
+        <p>OrbitVPN keeps the account, device, daily usage, and connection records needed to sign you in, enforce your limits, and operate the service. Passwords are stored as one-way hashes, not plain text.</p>
+        <p>It does not intentionally record the websites you visit or the contents of your traffic. VPN traffic passes through the selected OrbitVPN server and its hosting provider. Read the <a href="privacy/">full OrbitVPN privacy notice</a> for the exact data and deletion process.</p>
+      </div>
+      <div class="guide-links">
+        <strong>China VPN guides</strong>
+        <a href="guides/best-vpn-for-china/">What is the best VPN for China?</a>
+        <a href="guides/vpn-that-works-in-china/">How to test whether a VPN actually works</a>
+        <a href="guides/china-vpn-windows-android/">Windows and Android setup checklist</a>
       </div>
       <h2>Having trouble?</h2>
       <p>Message <a href="https://wa.me/923243122544">+92 324 3122544 on WhatsApp</a> or email <a href="mailto:furqanshaheer@gmail.com?subject=OrbitVPN%20help">furqanshaheer@gmail.com</a>. Include your device model, operating-system version, city, network or carrier, app version, and the error you saw. Do not send your password.</p>
     </div>
   </article>
 </main>
-<footer><div class="wrap footer-row"><span>OrbitVPN · built and supported by me</span><span><a href="../">OrbitLan</a><a href="#install">Download</a><a href="#privacy">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a href="mailto:furqanshaheer@gmail.com">Email</a></span></div></footer>
+<footer><div class="wrap footer-row"><span>OrbitVPN · built and supported by me</span><span><a href="../">OrbitLan</a><a href="#install">Download</a><a href="guides/">China VPN guides</a><a href="privacy/">Privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a href="mailto:furqanshaheer@gmail.com">Email</a></span></div></footer>
 <script>
 (() => {
   const canvas = document.getElementById('vpn-sky');

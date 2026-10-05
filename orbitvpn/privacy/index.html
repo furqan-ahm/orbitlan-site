@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OrbitVPN Privacy</title>
+<meta name="description" content="Plain-language information about the account, device, usage, and connection data handled by OrbitVPN.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#171743">
+<link rel="canonical" href="https://orbitlan.site/orbitvpn/privacy/">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/orbitlan-icon-192.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/orbitvpn/site.webmanifest">
+<link rel="stylesheet" href="/guides/guide.css">
+<link rel="stylesheet" href="/orbitvpn/guides/vpn-guide.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OrbitVPN">
+<meta property="og:title" content="OrbitVPN Privacy">
+<meta property="og:description" content="What OrbitVPN stores to run accounts, devices, data limits, and connections.">
+<meta property="og:url" content="https://orbitlan.site/orbitvpn/privacy/">
+<meta property="og:image" content="https://orbitlan.site/assets/orbitvpn-social.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OrbitVPN for China on Windows and Android">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://orbitlan.site/assets/orbitvpn-social.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "OrbitVPN Privacy",
+  "url": "https://orbitlan.site/orbitvpn/privacy/",
+  "isPartOf": {"@type": "WebSite", "name": "OrbitVPN", "url": "https://orbitlan.site/orbitvpn/"},
+  "dateModified": "2026-10-05"
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main navigation">
+    <a class="brand" href="/orbitvpn/"><img src="/assets/earthspin-transparent.webp" width="35" height="35" alt=""><span>rbitVPN</span></a>
+    <div class="nav-links"><a href="/orbitvpn/">OrbitVPN</a><a href="/orbitvpn/guides/">Guides</a><a href="https://wa.me/923243122544">WhatsApp</a><a class="download" href="/orbitvpn/#install">Download</a></div>
+  </nav>
+</header>
+<main>
+  <header class="guide-head vpn-guide-head">
+    <div class="wrap">
+      <p class="eyebrow">Privacy · plain language</p>
+      <h1>What OrbitVPN stores and why.</h1>
+      <p class="lede">OrbitVPN needs an account, a registered device, and usage totals to provide access and enforce the limits attached to that account.</p>
+    </div>
+  </header>
+  <article class="article">
+    <div class="wrap article-body">
+      <p class="meta">Updated October 5, 2026</p>
+
+      <h2>Your account</h2>
+      <p>OrbitVPN stores your username, a one-way password hash, account status, access expiry, device allowance, data allowance, plan and location preferences, and any short support note I add while helping with the account. Your plain-text password is not stored in the account database.</p>
+
+      <h2>Your devices</h2>
+      <p>For each signed-in device, OrbitVPN stores a generated device identifier and public key, the device name shown by the app, platform, status, creation time, and last contact time. These records are used to enforce device limits, replace an older device when required, and revoke access without changing every user's connection details.</p>
+
+      <h2>Usage and connection records</h2>
+      <p>The service records daily upload and download totals for each account, device, and exit server. It also keeps the credentials needed for that device to use an available exit. Fleet reports contain server health, capacity, recent aggregate session counts, and network load. They are operational measurements, not a browsing history.</p>
+      <p>OrbitVPN does not intentionally log the websites you visit, DNS queries, or the contents of your traffic. Your encrypted traffic passes through the selected OrbitVPN server and its hosting provider, which can necessarily observe network metadata such as addresses, timing, and volume.</p>
+
+      <h2>Sign-in and service security</h2>
+      <p>Failed sign-in attempts are rate-limited using a server-side hash derived from the source address and username. Short-lived session tokens identify the account and device to the service. Administrative actions are recorded so account changes and revocations can be traced. Cloudflare and the server hosting providers also process ordinary request and security information under their own policies.</p>
+
+      <h2>How long the records remain</h2>
+      <p>Account, device, and daily usage records remain while the account is operated. There is not currently a promised automatic deletion schedule. If you ask me to delete an account, its linked device, connection-credential, and usage records are deleted from the active control database. Limited administrative audit entries may remain so security-sensitive changes can still be traced.</p>
+
+      <h2>WhatsApp and email</h2>
+      <p>If you contact me for access or support, the message and contact details remain in WhatsApp or email under that service's own privacy and retention rules. Do not send your password, identity documents, or information that is not needed to solve the problem.</p>
+
+      <h2>Questions or deletion requests</h2>
+      <p>Message <a href="https://wa.me/923243122544">+92 324 3122544 on WhatsApp</a> or email <a href="mailto:furqanshaheer@gmail.com?subject=OrbitVPN%20privacy">furqanshaheer@gmail.com</a>. Include only the OrbitVPN username you want me to check or delete. This page describes the current beta and will be updated if the data handling changes.</p>
+    </div>
+  </article>
+</main>
+<footer><div class="wrap footer-row"><span>OrbitVPN · built and supported by me</span><span><a href="/orbitvpn/">OrbitVPN</a><a href="/orbitvpn/guides/">Guides</a><a href="/privacy/">OrbitLan privacy</a><a href="https://wa.me/923243122544">WhatsApp</a><a href="mailto:furqanshaheer@gmail.com">Email</a></span></div></footer>
+</body>
+</html>

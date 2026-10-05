@@ -1,0 +1,21 @@
+{
+  "name": "OrbitVPN",
+  "short_name": "OrbitVPN",
+  "description": "OrbitVPN for Windows and Android.",
+  "start_url": "/orbitvpn/",
+  "display": "standalone",
+  "background_color": "#090e43",
+  "theme_color": "#171743",
+  "icons": [
+    {
+      "src": "/assets/orbitlan-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/orbitlan-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
