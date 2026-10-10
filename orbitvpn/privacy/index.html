@@ -32,7 +32,7 @@
   "name": "OrbitVPN Privacy",
   "url": "https://orbitlan.site/orbitvpn/privacy/",
   "isPartOf": {"@type": "WebSite", "name": "OrbitVPN", "url": "https://orbitlan.site/orbitvpn/"},
-  "dateModified": "2026-10-05"
+  "dateModified": "2026-10-10"
 }
 </script>
 </head>
@@ -53,7 +53,7 @@
   </header>
   <article class="article">
     <div class="wrap article-body">
-      <p class="meta">Updated October 5, 2026</p>
+      <p class="meta">Updated October 10, 2026</p>
 
       <h2>Your account</h2>
       <p>OrbitVPN stores your username, a one-way password hash, account status, access expiry, device allowance, data allowance, plan and location preferences, and any short support note I add while helping with the account. Your plain-text password is not stored in the account database.</p>
@@ -63,6 +63,7 @@
 
       <h2>Usage and connection records</h2>
       <p>The service records daily upload and download totals for each account, device, and exit server. It also keeps the credentials needed for that device to use an available exit. Fleet reports contain server health, capacity, recent aggregate session counts, and network load. They are operational measurements, not a browsing history.</p>
+      <p>During the beta, the app also sends small connection-stage events such as connection started, verified, failed, or disconnected. These include the app version and opaque account, device, and server identifiers so I can diagnose a failed connection. They do not include your password, session token, VPN credentials, browsing destinations, DNS names, or traffic contents. These events are kept in a rotating server journal rather than the account database.</p>
       <p>OrbitVPN does not intentionally log the websites you visit, DNS queries, or the contents of your traffic. Your encrypted traffic passes through the selected OrbitVPN server and its hosting provider, which can necessarily observe network metadata such as addresses, timing, and volume.</p>
 
       <h2>Sign-in and service security</h2>
